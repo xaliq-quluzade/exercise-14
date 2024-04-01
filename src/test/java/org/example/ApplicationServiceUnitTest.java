@@ -31,10 +31,10 @@ class ApplicationServiceUnitTest {
 
     @Test
     void divide_success() {
-        when(calculatorService.divide(anyInt(), anyInt())).thenReturn(3.2);
-        double actual = applicationService.divide(32, 10);
-        verify(calculatorService, times(1)).divide(32, 10);
-        Assertions.assertEquals(3.2, actual);
+        when(calculatorService.divide(anyInt(), anyInt())).thenReturn(3);
+        double actual = applicationService.divide(30, 10);
+        verify(calculatorService, times(1)).divide(30, 10);
+        Assertions.assertEquals(3, actual);
     }
 
     @Test

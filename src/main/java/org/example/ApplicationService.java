@@ -29,7 +29,7 @@ public class ApplicationService {
         return result;
     }
 
-    public double divide(int a, int b) {
+    public int divide(int a, int b) {
         if (a % 2 == 1 || b % 2 == 1) {
             throw new ArithmeticException("ededlerin her ikisi 2-ye qaliqsiz bolunmelidir");
         }
